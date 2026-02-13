@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- PWA / iOS Home Screen Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Lib Daily">
+    
+    <!-- Icon & Favicon (Assumes image is named knight.png in the same folder) -->
+    <link rel="apple-touch-icon" href="knight.png">
+    <link rel="icon" type="image/png" href="knight.png">
+    
     <title>Library Daily</title>
     
     <!-- React & Babel for in-browser execution -->
@@ -12,15 +20,30 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS with Custom Knight Theme Colors -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        knightBlue: '#1e6eb0', // From the top banner
+                        knightGold: '#e9c693', // From the parchment
+                        knightDark: '#2c3e50',
+                    }
+                }
+            }
+        }
+    </script>
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
     <style>
         body { -webkit-tap-highlight-color: transparent; }
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .knight-gradient {
+            background: linear-gradient(135deg, #1e6eb0 0%, #154e7d 100%);
+        }
+        .parchment-bg {
+            background-color: #fdf8f0;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -29,7 +52,6 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
-        // Simple SVG versions of Lucide icons to avoid dependency issues
         const ClockIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
         const RefreshIcon = ({ className }) => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><polyline points="21 3 21 8 16 8"/></svg>;
         const BookIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>;
@@ -56,7 +78,6 @@
                         return row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(cell => cell.replace(/"/g, '').trim());
                     });
 
-                    // 1. Meta Data (Rows 2-5)
                     setMetaData({
                         weekday: rows[1]?.[2] || '',
                         date: rows[2]?.[2] || '',
@@ -64,7 +85,6 @@
                         events: rows[4]?.[2] || ''
                     });
 
-                    // 2. Schedule Pairs (Rows 6-35)
                     const pairs = [];
                     for (let i = 5; i < 35; i += 2) {
                         if (rows[i] && rows[i+1]) {
@@ -81,7 +101,7 @@
                     setLastUpdated(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
                     setError(null);
                 } catch (err) {
-                    setError("Sync Error: Swipe down to try again.");
+                    setError("Sync Error: Swipe down or tap refresh.");
                     console.error(err);
                 } finally {
                     setLoading(false);
@@ -95,20 +115,23 @@
             }, []);
 
             return (
-                <div className="min-h-screen pb-24">
+                <div className="min-h-screen pb-24 parchment-bg">
                     {/* Header */}
-                    <div className="sticky top-0 z-20 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4 flex justify-between items-center shadow-sm">
-                        <div className="flex flex-col">
-                            <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest leading-none mb-1">
-                                {metaData.cycle || 'FETCHING...'}
-                            </span>
-                            <h1 className="text-xl font-bold text-slate-800 leading-none">
-                                {metaData.weekday || 'Today'} <span className="text-slate-400 font-medium text-sm">| {metaData.date}</span>
-                            </h1>
+                    <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-md border-b-2 border-knightGold px-6 py-4 flex justify-between items-center shadow-md">
+                        <div className="flex items-center gap-3">
+                            <img src="knight.png" alt="Logo" className="w-10 h-10 object-contain" onError={(e) => e.target.style.display='none'} />
+                            <div className="flex flex-col">
+                                <span className="text-[10px] font-black text-knightBlue uppercase tracking-widest leading-none mb-1">
+                                    {metaData.cycle || 'FETCHING...'}
+                                </span>
+                                <h1 className="text-xl font-bold text-slate-800 leading-none">
+                                    {metaData.weekday || 'Today'} <span className="text-slate-400 font-medium text-sm">| {metaData.date}</span>
+                                </h1>
+                            </div>
                         </div>
                         <button 
                             onClick={fetchData}
-                            className={`p-2 rounded-full active:bg-slate-100 transition-colors ${loading ? 'text-blue-500' : 'text-slate-400'}`}
+                            className={`p-2 rounded-full active:bg-slate-100 transition-colors ${loading ? 'text-knightBlue' : 'text-slate-400'}`}
                         >
                             <RefreshIcon className={loading ? 'animate-spin' : ''} />
                         </button>
@@ -116,11 +139,11 @@
 
                     {/* Events Banner */}
                     {metaData.events && metaData.events.toLowerCase() !== "none" && (
-                        <div className="mx-4 mt-4 p-4 bg-amber-50 border border-amber-100 rounded-2xl flex gap-3 items-start">
-                            <div className="text-amber-500 shrink-0 mt-0.5"><StarIcon /></div>
+                        <div className="mx-4 mt-4 p-4 bg-white border-l-4 border-knightBlue rounded-r-2xl shadow-sm flex gap-3 items-start">
+                            <div className="text-knightBlue shrink-0 mt-0.5"><StarIcon /></div>
                             <div>
-                                <h2 className="text-[10px] font-black text-amber-600 uppercase tracking-wider mb-1">Today's Events</h2>
-                                <p className="text-sm text-amber-900 font-bold leading-snug">{metaData.events}</p>
+                                <h2 className="text-[10px] font-black text-knightBlue uppercase tracking-wider mb-1">Today's Events</h2>
+                                <p className="text-sm text-slate-800 font-bold leading-snug">{metaData.events}</p>
                             </div>
                         </div>
                     )}
@@ -132,7 +155,7 @@
                             return (
                                 <div key={index} className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden">
                                     <div className="px-5 py-3 bg-slate-50 border-b border-slate-100 flex justify-between items-center">
-                                        <span className="text-xs font-black text-slate-500 uppercase tracking-wider">{slot.periodName}</span>
+                                        <span className="text-xs font-black text-knightBlue uppercase tracking-wider">{slot.periodName}</span>
                                         <div className="flex items-center gap-1.5 text-slate-400 font-bold text-[11px]">
                                             <ClockIcon />
                                             {slot.timeRange}
@@ -141,7 +164,7 @@
                                     
                                     <div className="p-5 space-y-5">
                                         <div className="flex gap-4 items-start">
-                                            <div className={`w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 ${!isAvailable ? 'bg-blue-100 text-blue-600' : 'bg-slate-100 text-slate-300'}`}>
+                                            <div className={`w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 ${!isAvailable ? 'bg-blue-50 text-knightBlue' : 'bg-slate-100 text-slate-300'}`}>
                                                 <BookIcon />
                                             </div>
                                             <div>
@@ -153,7 +176,7 @@
                                         </div>
 
                                         <div className="flex gap-4 items-start">
-                                            <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center shrink-0">
+                                            <div className="w-10 h-10 bg-orange-50 text-amber-700 rounded-2xl flex items-center justify-center shrink-0">
                                                 <UserIcon />
                                             </div>
                                             <div>
@@ -171,8 +194,9 @@
 
                     {error && <div className="mx-6 p-4 bg-red-50 text-red-600 rounded-2xl text-xs font-bold text-center border border-red-100">{error}</div>}
                     
-                    <footer className="px-6 py-6 text-center opacity-30">
-                        <p className="text-[10px] font-black uppercase tracking-[0.3em]">Updated {lastUpdated}</p>
+                    <footer className="px-6 py-8 text-center flex flex-col items-center gap-4">
+                        <img src="knight.png" alt="Logo" className="w-12 h-12 opacity-20 grayscale" />
+                        <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.3em]">Updated {lastUpdated}</p>
                     </footer>
                 </div>
             );
