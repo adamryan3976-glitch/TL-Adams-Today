@@ -9,9 +9,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Lib Daily">
     
-    <!-- Icon & Favicon (Assumes image is named knight.png in the same folder) -->
-    <link rel="apple-touch-icon" href="knight.png">
-    <link rel="icon" type="image/png" href="knight.png">
+    <!-- Icon & Favicon Fix for Chrome/iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="knight.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="knight.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="knight.png">
+    <link rel="shortcut icon" href="knight.png">
     
     <title>Library Daily</title>
     
@@ -129,7 +131,6 @@
                                 alt="Winchester Logo" 
                                 className="w-10 h-10 object-contain" 
                                 onError={(e) => {
-                                    // Fallback to local if drive link fails
                                     if(e.target.src !== 'knight.png') e.target.src = 'knight.png';
                                 }} 
                             />
