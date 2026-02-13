@@ -1,0 +1,169 @@
+import React, { useState, useEffect } from 'react';
+import { Clock, RefreshCw, Calendar, MapPin, BookOpen, Star, Info, User } from 'lucide-react';
+
+const App = () => {
+  const [scheduleData, setScheduleData] = useState([]);
+  const [metaData, setMetaData] = useState({ weekday: '', date: '', cycle: '', events: '' });
+  const [loading, setLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState('');
+  const [error, setError] = useState(null);
+
+  const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSkqCHaCLV6PfsN2ifecQUscJEdqsyvJU6w2i1nZpovSSJjfN4qH0C-7kIAh48uJEWIxuFJTFjTlr7c/pub?gid=1873441959&single=true&output=csv';
+
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(`${CSV_URL}&cachebust=${Date.now()}`);
+      if (!response.ok) throw new Error('Network response was not ok');
+      const text = await response.text();
+      
+      const rows = text.split('\n').map(row => {
+        return row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(cell => cell.replace(/"/g, '').trim());
+      });
+
+      // 1. Extract Meta Data from Rows 2-5 (0-indexed 1-4)
+      setMetaData({
+        weekday: rows[1]?.[2] || '',
+        date: rows[2]?.[2] || '',
+        cycle: rows[3]?.[2] || '',
+        events: rows[4]?.[2] || ''
+      });
+
+      // 2. Extract Paired Rows from Row 6 to 35 (0-indexed 5 to 34)
+      const pairs = [];
+      for (let i = 5; i < 35; i += 2) {
+        if (rows[i] && rows[i+1]) {
+          pairs.push({
+            periodName: rows[i][0],      // Row 6, Col A
+            roomBooking: rows[i][2],    // Row 6, Col C
+            timeRange: rows[i+1][0],    // Row 7, Col A
+            adamsLocation: rows[i+1][2] // Row 7, Col C
+          });
+        }
+      }
+
+      setScheduleData(pairs);
+      setLastUpdated(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
+      setError(null);
+    } catch (err) {
+      setError("Unable to connect to Google Sheets. Check your internet or publishing settings.");
+      // Note: In a real environment, we'd stop here, but for this preview:
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+    const interval = setInterval(fetchData, 300000); // 5 min refresh
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans pb-20">
+      {/* Top Sticky Header */}
+      <div className="sticky top-0 z-20 bg-white/80 backdrop-blur-md border-b border-slate-200 px-6 py-3 flex justify-between items-center">
+        <div className="flex flex-col">
+          <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest leading-tight">
+            {metaData.cycle || 'Loading Cycle...'}
+          </span>
+          <h1 className="text-lg font-bold text-slate-800 leading-tight">
+            {metaData.weekday} <span className="text-slate-400 font-medium">| {metaData.date}</span>
+          </h1>
+        </div>
+        <button 
+          onClick={fetchData}
+          className={`p-2 rounded-full transition-colors ${loading ? 'text-blue-500' : 'text-slate-400 active:bg-slate-100'}`}
+        >
+          <RefreshCw size={20} className={loading ? 'animate-spin' : ''} />
+        </button>
+      </div>
+
+      {/* Daily Events Banner */}
+      {metaData.events && metaData.events !== "None" && (
+        <div className="mx-4 mt-4 p-4 bg-amber-50 border border-amber-100 rounded-2xl flex gap-3 items-start">
+          <Star size={18} className="text-amber-500 shrink-0 mt-0.5" />
+          <div>
+            <h2 className="text-xs font-bold text-amber-700 uppercase tracking-wider mb-1">Today's Events</h2>
+            <p className="text-sm text-amber-800 font-medium leading-snug">{metaData.events}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Schedule List */}
+      <main className="p-4 space-y-4">
+        {scheduleData.length > 0 ? scheduleData.map((slot, index) => {
+          const hasBooking = slot.roomBooking && slot.roomBooking.toLowerCase() !== 'available' && slot.roomBooking !== "";
+          
+          return (
+            <div 
+              key={index}
+              className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col"
+            >
+              {/* Period & Time Header */}
+              <div className="px-5 py-3 bg-slate-50 border-b border-slate-100 flex justify-between items-center">
+                <span className="text-sm font-black text-slate-800 uppercase tracking-tight">{slot.periodName}</span>
+                <div className="flex items-center gap-1.5 text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-100 shadow-sm">
+                  <Clock size={12} />
+                  <span className="text-[11px] font-bold">{slot.timeRange}</span>
+                </div>
+              </div>
+
+              {/* Details Section */}
+              <div className="p-5 space-y-4">
+                {/* Teaching Space Row */}
+                <div className="flex gap-4 items-start">
+                  <div className={`w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 ${hasBooking ? 'bg-blue-100 text-blue-600' : 'bg-slate-100 text-slate-400'}`}>
+                    <BookOpen size={20} />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-0.5">Teaching Space</span>
+                    <p className={`text-base leading-tight font-bold ${hasBooking ? 'text-slate-800' : 'text-slate-400 italic'}`}>
+                      {slot.roomBooking || 'No Booking'}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Divider */}
+                <div className="ml-14 border-t border-slate-50" />
+
+                {/* Adams Location Row */}
+                <div className="flex gap-4 items-start">
+                  <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center shrink-0">
+                    <User size={20} />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-0.5">Where's Adams?</span>
+                    <p className="text-base font-bold text-slate-800 leading-tight">
+                      {slot.adamsLocation || 'Unknown'}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        }) : (
+          <div className="text-center py-20 text-slate-400">
+            <Info className="mx-auto mb-2 opacity-20" size={48} />
+            <p>Waiting for schedule data...</p>
+          </div>
+        )}
+      </main>
+
+      {error && (
+        <div className="mx-6 p-4 bg-red-50 text-red-600 rounded-2xl text-xs font-bold text-center border border-red-100">
+          {error}
+        </div>
+      )}
+
+      <footer className="px-6 py-4 text-center">
+        <p className="text-[10px] text-slate-300 font-bold uppercase tracking-[0.2em]">
+          Auto-updates every 5 minutes
+        </p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
