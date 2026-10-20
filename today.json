@@ -1,10 +1,9 @@
 {
   "source": "sheet",
   "sheetName": "Oct 19-23",
-  "cycleDay": "4",
+  "cycleDay": "5",
   "events": [
     "MOD BREAK",
-    "Navaratri",
     "Durga Puja"
   ],
   "slots": [
@@ -18,23 +17,13 @@
       "label": "Period 1",
       "time": "8:45 - 9:15",
       "adams": "PREP",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Paquin - Grade(s) 7, 8 - Booke exchange"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Bennett - Grade(s) 5, 6 - book exchange"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 3",
@@ -51,13 +40,13 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
@@ -94,7 +83,12 @@
       "label": "Period 9",
       "time": "2:15 - 2:45",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Dubyk 102 -Book Exchange"
+        }
+      ]
     },
     {
       "label": "Period 10",
@@ -109,6 +103,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "noSchool": false
 }
