@@ -1,10 +1,9 @@
 {
   "source": "sheet",
   "sheetName": "Oct 19-23",
-  "cycleDay": "1",
+  "cycleDay": "2",
   "events": [
     "MOD BREAK",
-    "Durga Puja",
     "Kanda Shasti"
   ],
   "slots": [
@@ -23,13 +22,13 @@
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Library",
       "bookings": []
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Library",
       "bookings": []
     },
     {
@@ -41,7 +40,7 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Murray FDK Room 103",
+      "adams": "Library",
       "bookings": []
     },
     {
@@ -99,6 +98,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "noSchool": false
 }
