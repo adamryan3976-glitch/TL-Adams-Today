@@ -1,7 +1,7 @@
 {
   "source": "sheet",
   "sheetName": "Oct 19-23",
-  "cycleDay": "2",
+  "cycleDay": "3",
   "events": [
     "MOD BREAK",
     "Kanda Shasti"
@@ -22,13 +22,13 @@
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
@@ -40,7 +40,7 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Library",
+      "adams": "Library with E. Wright",
       "bookings": []
     },
     {
@@ -98,6 +98,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "noSchool": false
 }
