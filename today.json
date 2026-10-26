@@ -1,7 +1,9 @@
 {
-  "source": "projected",
+  "source": "sheet",
+  "sheetName": "Oct 26-30",
   "cycleDay": "",
   "events": [
+    "PA DAY",
     "Kanda Shasti"
   ],
   "slots": [
@@ -96,6 +98,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "noSchool": true
 }
