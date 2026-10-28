@@ -1,7 +1,7 @@
 {
   "source": "sheet",
   "sheetName": "Oct 26-30",
-  "cycleDay": "4",
+  "cycleDay": "5",
   "events": [
     "Kanda Shasti"
   ],
@@ -39,31 +39,31 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
       "label": "Lunch",
       "time": "11:30 - 12:30",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Connelly - Grade(s) All Grades - Indigenous Student Circle"
+        }
+      ]
     },
     {
       "label": "Period 6",
       "time": "12:30 - 1:00",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "McVeen - Grade(s) 3, 4 - Book Exchange"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 7",
@@ -87,7 +87,12 @@
       "label": "Period 9",
       "time": "2:15 - 2:45",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Dubyk 102 -Book Exchange"
+        }
+      ]
     },
     {
       "label": "Period 10",
@@ -102,6 +107,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "noSchool": false
 }
