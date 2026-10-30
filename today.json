@@ -1,7 +1,7 @@
 {
   "source": "sheet",
   "sheetName": "Oct 26-30",
-  "cycleDay": "1",
+  "cycleDay": "2",
   "events": [],
   "slots": [
     {
@@ -19,13 +19,13 @@
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Library",
       "bookings": []
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Library",
       "bookings": []
     },
     {
@@ -37,14 +37,24 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Murray FDK Room 103",
-      "bookings": []
+      "adams": "Library",
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Ayer, Shepherd - Grade(s) FDK, 8 - Buddies activity for Halloween."
+        }
+      ]
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Ayer, Shepherd - Grade(s) FDK, 8 - Buddies activity for Halloween."
+        }
+      ]
     },
     {
       "label": "Lunch",
@@ -95,6 +105,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "noSchool": false
 }
