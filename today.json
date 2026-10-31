@@ -1,110 +1,101 @@
 {
-  "source": "sheet",
-  "sheetName": "Oct 26-30",
-  "cycleDay": "2",
-  "events": [],
+  "source": "projected",
+  "cycleDay": "",
+  "events": [
+    "Halloween"
+  ],
   "slots": [
     {
       "label": "Before School",
       "time": "7:45 - 8:45",
-      "adams": "Crosswalk Duty",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 1",
       "time": "8:45 - 9:15",
-      "adams": "PREP",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "AM Recess",
       "time": "10:15 - 10:30",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Ayer, Shepherd - Grade(s) FDK, 8 - Buddies activity for Halloween."
-        }
-      ]
+      "adams": "",
+      "bookings": []
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Ayer, Shepherd - Grade(s) FDK, 8 - Buddies activity for Halloween."
-        }
-      ]
+      "adams": "",
+      "bookings": []
     },
     {
       "label": "Lunch",
       "time": "11:30 - 12:30",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 6",
       "time": "12:30 - 1:00",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 7",
       "time": "1:00 - 1:30",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 8",
       "time": "1:30 - 2:00",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "PM Recess",
       "time": "2:00 - 2:15",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 9",
       "time": "2:15 - 2:45",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "Period 10",
       "time": "2:45 - 3:15",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     },
     {
       "label": "After School",
       "time": "3:15 - 4:00",
-      "adams": "Library",
+      "adams": "",
       "bookings": []
     }
   ],
-  "date": "2026-10-30",
-  "noSchool": false
+  "date": "2026-10-31",
+  "noSchool": true
 }
