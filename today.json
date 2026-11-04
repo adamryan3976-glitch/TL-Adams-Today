@@ -1,7 +1,7 @@
 {
   "source": "sheet",
   "sheetName": "Nov 2-6",
-  "cycleDay": "4",
+  "cycleDay": "5",
   "events": [
     "Treaties Recognition Week",
     "Holocaust Education Week"
@@ -55,13 +55,13 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
@@ -73,13 +73,8 @@
     {
       "label": "Period 6",
       "time": "12:30 - 1:00",
-      "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "McVeen - Grade(s) 3, 4 - Book Exchange"
-        }
-      ]
+      "adams": "Covering 207",
+      "bookings": []
     },
     {
       "label": "Period 7",
@@ -106,7 +101,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "McMurtrie - Grade(s) 3, 4 - book exchange"
+          "text": "Dubyk 102 -Book Exchange"
         }
       ]
     },
@@ -123,6 +118,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "noSchool": false
 }
