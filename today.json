@@ -24,7 +24,12 @@
       "label": "Period 2",
       "time": "9:15 - 9:45",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Bennett - Grade(s) 5, 6 - book exchange"
+        }
+      ]
     },
     {
       "label": "Period 3",
