@@ -1,10 +1,11 @@
 {
   "source": "sheet",
   "sheetName": "Nov 2-6",
-  "cycleDay": "1",
+  "cycleDay": "2",
   "events": [
     "Treaties Recognition Week",
-    "Holocaust Education Week"
+    "Holocaust Education Week",
+    "Diwali/Deepavali"
   ],
   "slots": [
     {
@@ -17,34 +18,19 @@
       "label": "Period 1",
       "time": "8:45 - 9:15",
       "adams": "PREP",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "E. Wright - Grade(s) Gifted Testing - Gifted Testing"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Kanellis FDK Room 111",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "E. Wright - Grade(s) Gifted Testing - Gifted Testing"
-        }
-      ]
+      "adams": "Library",
+      "bookings": []
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Kanellis FDK Room 111",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "E. Wright - Grade(s) Gifted Testing - Gifted Testing"
-        }
-      ]
+      "adams": "Library",
+      "bookings": []
     },
     {
       "label": "AM Recess",
@@ -55,7 +41,7 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Murray FDK Room 103",
+      "adams": "Library",
       "bookings": []
     },
     {
@@ -68,12 +54,7 @@
       "label": "Lunch",
       "time": "11:30 - 12:30",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Paquin - Grade(s) 4, 5, 6, 7, 8 - D&D"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 6",
@@ -118,6 +99,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "noSchool": false
 }
