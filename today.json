@@ -2,8 +2,8 @@
   "source": "projected",
   "cycleDay": "",
   "events": [
-    "Treaties Recognition Week",
-    "Diwali/Deepavali"
+    "Diwali/Deepavali",
+    "Bandi Chhor Divas"
   ],
   "slots": [
     {
@@ -97,6 +97,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "noSchool": true
 }
