@@ -1,9 +1,10 @@
 {
   "source": "sheet",
   "sheetName": "Nov 9-13",
-  "cycleDay": "3",
+  "cycleDay": "4",
   "events": [
-    "Diwali/Deepavali"
+    "Diwali/Deepavali",
+    "Birth of the Bab begins"
   ],
   "slots": [
     {
@@ -21,13 +22,13 @@
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Library",
       "bookings": []
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Shepherd FDK Room 101",
       "bookings": []
     },
     {
@@ -39,13 +40,13 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Library with E. Wright",
+      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
       "bookings": []
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Library",
+      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
       "bookings": []
     },
     {
@@ -58,7 +59,12 @@
       "label": "Period 6",
       "time": "12:30 - 1:00",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "McVeen - Grade(s) 3, 4 - Book Exchange"
+        }
+      ]
     },
     {
       "label": "Period 7",
@@ -97,6 +103,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "noSchool": false
 }
