@@ -1,9 +1,7 @@
 {
-  "source": "sheet",
-  "sheetName": "Nov 9-13",
+  "source": "projected",
   "cycleDay": "",
   "events": [
-    "PA DAY",
     "Transgender Awareness Week"
   ],
   "slots": [
@@ -98,6 +96,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "noSchool": true
 }
