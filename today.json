@@ -1,7 +1,7 @@
 {
   "source": "sheet",
   "sheetName": "Nov 16-20",
-  "cycleDay": "4",
+  "cycleDay": "5",
   "events": [
     "Transgender Awareness Week",
     "Anti-Bullying Awareness and Prevention Week"
@@ -23,12 +23,7 @@
       "label": "Period 2",
       "time": "9:15 - 9:45",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Bennett - Grade(s) 5, 6 - Book Exchange"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 3",
@@ -45,13 +40,13 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": []
     },
     {
@@ -61,7 +56,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Levac - Grade(s) 4, 5, 6, 7, 8 - Musical Auditions"
+          "text": "Paquin - Grade(s) 4, 5, 6, 7, 8 - D&D"
         }
       ]
     },
@@ -69,12 +64,7 @@
       "label": "Period 6",
       "time": "12:30 - 1:00",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "McVeen - Grade(s) 3, 4 - Book Exchange"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 7",
@@ -86,12 +76,7 @@
       "label": "Period 8",
       "time": "1:30 - 2:00",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Paulino - Grade(s) 1, 2 - Book exchange"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "PM Recess",
@@ -103,13 +88,23 @@
       "label": "Period 9",
       "time": "2:15 - 2:45",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Dubyk 102 -Book Exchange"
+        }
+      ]
     },
     {
       "label": "Period 10",
       "time": "2:45 - 3:15",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Adams, Bennett - Grade(s) 5 - Intro to Microbits"
+        }
+      ]
     },
     {
       "label": "After School",
@@ -118,6 +113,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "noSchool": false
 }
