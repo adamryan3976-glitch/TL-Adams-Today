@@ -84,7 +84,12 @@
       "label": "Period 6",
       "time": "12:30 - 1:00",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Moore - Grade(s) 4, 5 - Book Exchange"
+        }
+      ]
     },
     {
       "label": "Period 7",
