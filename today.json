@@ -1,8 +1,10 @@
 {
   "source": "sheet",
   "sheetName": "Nov 23-27",
-  "cycleDay": "2",
-  "events": [],
+  "cycleDay": "3",
+  "events": [
+    "Guru Nanak Jayanti"
+  ],
   "slots": [
     {
       "label": "Before School",
@@ -14,37 +16,67 @@
       "label": "Period 1",
       "time": "8:45 - 9:15",
       "adams": "PREP",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+        }
+      ]
     },
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Library",
-      "bookings": []
+      "adams": "Kanellis FDK Room 111",
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+        }
+      ]
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Library",
-      "bookings": []
+      "adams": "Kanellis FDK Room 111",
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+        }
+      ]
     },
     {
       "label": "AM Recess",
       "time": "10:15 - 10:30",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+        }
+      ]
     },
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Library",
-      "bookings": []
+      "adams": "Library with E. Wright",
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+        }
+      ]
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+        }
+      ]
     },
     {
       "label": "Lunch",
@@ -100,6 +132,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "noSchool": false
 }
