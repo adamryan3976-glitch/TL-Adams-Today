@@ -1,10 +1,8 @@
 {
   "source": "sheet",
   "sheetName": "Nov 23-27",
-  "cycleDay": "3",
-  "events": [
-    "Guru Nanak Jayanti"
-  ],
+  "cycleDay": "4",
+  "events": [],
   "slots": [
     {
       "label": "Before School",
@@ -19,29 +17,29 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
         }
       ]
     },
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Library",
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
         }
       ]
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Shepherd FDK Room 101",
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+          "text": "Adams - Grade(s) 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -49,32 +47,27 @@
       "label": "AM Recess",
       "time": "10:15 - 10:30",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Library with E. Wright",
+      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
         }
       ]
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Library",
+      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Kooy, Adams, Murray, Dodds - Grade(s) In-School PD - Indigenous Education PD"
+          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
         }
       ]
     },
@@ -85,7 +78,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Levac - Grade(s) 4, 5, 6, 7, 8 - Musical Auditions"
+          "text": "Daré - Grade(s) 6, 7, 8 - 12:00-12:30 French Presentations"
         }
       ]
     },
@@ -93,19 +86,34 @@
       "label": "Period 6",
       "time": "12:30 - 1:00",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Adams - Grade(s) 7, 8 - CASL Meeting"
+        }
+      ]
     },
     {
       "label": "Period 7",
       "time": "1:00 - 1:30",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Adams - Grade(s) 7, 8 - CASL Meeting"
+        }
+      ]
     },
     {
       "label": "Period 8",
       "time": "1:30 - 2:00",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+        }
+      ]
     },
     {
       "label": "PM Recess",
@@ -117,13 +125,23 @@
       "label": "Period 9",
       "time": "2:15 - 2:45",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+        }
+      ]
     },
     {
       "label": "Period 10",
       "time": "2:45 - 3:15",
       "adams": "Library",
-      "bookings": []
+      "bookings": [
+        {
+          "space": "Teaching Space",
+          "text": "Cole - Grade(s) 7, 8 - Practicing Drama Holiday Plays"
+        }
+      ]
     },
     {
       "label": "After School",
@@ -132,6 +150,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "noSchool": false
 }
