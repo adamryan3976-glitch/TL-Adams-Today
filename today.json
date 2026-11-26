@@ -1,8 +1,10 @@
 {
   "source": "sheet",
   "sheetName": "Nov 23-27",
-  "cycleDay": "4",
-  "events": [],
+  "cycleDay": "5",
+  "events": [
+    "Day of the Covenant"
+  ],
   "slots": [
     {
       "label": "Before School",
@@ -17,7 +19,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -28,7 +30,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -39,7 +41,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Adams - Grade(s) 7, 8 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -52,22 +54,22 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Kanellis FDK Room 111 and Book Exchange in Library",
+      "adams": "Kanellis FDK Room 111",
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -75,12 +77,7 @@
       "label": "Lunch",
       "time": "11:30 - 12:30",
       "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Daré - Grade(s) 6, 7, 8 - 12:00-12:30 French Presentations"
-        }
-      ]
+      "bookings": []
     },
     {
       "label": "Period 6",
@@ -89,7 +86,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Adams - Grade(s) 7, 8 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -100,7 +97,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Adams - Grade(s) 7, 8 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -111,7 +108,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -128,7 +125,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 1, 2, 3 - CASL Meeting"
+          "text": "Dubyk 102 -Book Exchange"
         }
       ]
     },
@@ -139,7 +136,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Cole - Grade(s) 7, 8 - Practicing Drama Holiday Plays"
+          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
         }
       ]
     },
@@ -150,6 +147,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "noSchool": false
 }
