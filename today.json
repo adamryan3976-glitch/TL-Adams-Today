@@ -1,10 +1,8 @@
 {
   "source": "sheet",
   "sheetName": "Nov 23-27",
-  "cycleDay": "5",
-  "events": [
-    "Day of the Covenant"
-  ],
+  "cycleDay": "1",
+  "events": [],
   "slots": [
     {
       "label": "Before School",
@@ -19,31 +17,21 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
+          "text": "Pannunzio - Grade(s) 1, 2 - Book Exchange"
         }
       ]
     },
     {
       "label": "Period 2",
       "time": "9:15 - 9:45",
-      "adams": "Library",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
-        }
-      ]
+      "adams": "Kanellis FDK Room 111",
+      "bookings": []
     },
     {
       "label": "Period 3",
       "time": "9:45 - 10:15",
-      "adams": "Shepherd FDK Room 101",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
-        }
-      ]
+      "adams": "Kanellis FDK Room 111",
+      "bookings": []
     },
     {
       "label": "AM Recess",
@@ -54,22 +42,17 @@
     {
       "label": "Period 4",
       "time": "10:30 - 11:00",
-      "adams": "Kanellis FDK Room 111",
-      "bookings": [
-        {
-          "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
-        }
-      ]
+      "adams": "Murray FDK Room 103",
+      "bookings": []
     },
     {
       "label": "Period 5",
       "time": "11:00 - 11:30",
-      "adams": "Kanellis FDK Room 111",
+      "adams": "Library",
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
+          "text": "Paulino - Grade(s) 1, 2 - Book Exchange"
         }
       ]
     },
@@ -86,7 +69,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
+          "text": "McMurtrie - Grade(s) 3, 4 - book exchange"
         }
       ]
     },
@@ -97,7 +80,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
+          "text": "Lyons - Grade(s) 1, 2 - Book Exchange"
         }
       ]
     },
@@ -108,7 +91,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
+          "text": "S. Wright - Grade(s) 2, 3 - Book Exchange"
         }
       ]
     },
@@ -125,7 +108,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Dubyk 102 -Book Exchange"
+          "text": "Adams, Bennett - Grade(s) 5 - Microbits Coding"
         }
       ]
     },
@@ -136,7 +119,7 @@
       "bookings": [
         {
           "space": "Teaching Space",
-          "text": "Pelton, Sheilds - Grade(s) 4, 5, 6, 7, 8 - CASL Meeting"
+          "text": "Adams, Bennett - Grade(s) 5 - Microbits Coding"
         }
       ]
     },
@@ -147,6 +130,6 @@
       "bookings": []
     }
   ],
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "noSchool": false
 }
